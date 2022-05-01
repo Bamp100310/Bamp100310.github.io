@@ -83,7 +83,7 @@
         padding: 0%;
         background: lightgray;
         font-family: Arial, Helvetica, sans-serif;
-        /* background-image: url("../assets/Urithiru_LuisDavies.jpg"); */
+        background-image: url("../assets/Urithiru_LuisDavies.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: auto;
@@ -397,7 +397,7 @@
         #contenido {
             float:right;
             max-width: 97%;
-            max-height: 1368px;
+            max-height: 1400px;
             padding: 10px;
             margin: auto;
             border: 1px solid black;
