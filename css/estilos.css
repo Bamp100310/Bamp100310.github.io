@@ -136,7 +136,7 @@
     
     
     
-    .men_prin ul li {
+    .men_prin_l ul li {
         background: url('../assets/iconred.ico') no-repeat left center;
         padding: 5px 10px 5px 25px;
         list-style: none;
@@ -149,7 +149,7 @@
     
     /* Se le asigna un icono personalizado a la lista del menu ademas de mas opciones de formato */
     
-    .men_prin ul #active {
+    .men_prin_l ul #active {
         background-color: rgba(0,0,0,0.5);
     }
     
@@ -344,7 +344,7 @@
         background-color: rgba(68, 68, 68, 0.253);
     }
     
-    .men_prin a {
+    .men_prin_m a {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
         font-size: 20px;
@@ -352,19 +352,19 @@
         display: block;
         transition: 0.3s;
     }
-    .men_prin a:hover {
+    .men_prin_m a:hover {
         text-decoration: none;
         border-bottom: 0;
     }
     
-    .men_prin .closebtn {
+    .men_prin_m .closebtn {
         position: relative;
         top: 0;
         font-size: 25px;
         margin-left: 77.5%;
     }
     
-    .men_prin {
+    .men_prin_m {
         height: 71.5%; /* Specify a height */
         width: 0; /* 0 width - change this with JavaScript */
         position: absolute; /* Stay in place */
@@ -379,6 +379,16 @@
     }
     /* Se establece el formato del menu principal de toda la pagina */
 
+    .men_prin_l {
+        width: calc(20% - 20px);
+        margin-top: 4px;
+        min-height: 475px;
+        border: 1px solid black;
+        padding-bottom: 18px;
+        background-color: rgba(0,0,0,0.5);
+        overflow: auto;
+    }
+
     @media (min-width: 480px) and (max-width: 800px) {
         #contenido {
             float:right;
@@ -391,8 +401,8 @@
             overflow: auto;
             font-family: 'Texto','Times New Roman', Times, serif;
         }
-        .men_prin {
-            height: 31.5%; /* Specify a height */
+        .men_prin_m {
+            height: 55.5%; /* Specify a height */
             width: 0; /* 0 width - change this with JavaScript */
             position: absolute; /* Stay in place */
             z-index: 1; /* Stay on top */
@@ -403,6 +413,9 @@
             overflow-x: hidden; /* Disable horizontal scroll */
             padding-top: 0px; /* Place content 60px from the top */
             transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+        }
+        .men_prin_l {
+            display: none;
         }
     }
 
@@ -419,7 +432,7 @@
             overflow: auto;
             font-family: 'Texto','Times New Roman', Times, serif;
         }
-        .men_prin {
+        .men_prin_m {
             height: 50.5%; /* Specify a height */
             width: 0; /* 0 width - change this with JavaScript */
             position: absolute; /* Stay in place */
@@ -432,31 +445,29 @@
             padding-top: 0px; /* Place content 60px from the top */
             transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
         }
+
+        .men_prin_l {
+            display: none;
+        }
     }
     
     @media (min-width: 1201px) {
         #contenido {
             float:right;
-            max-width: 98%;
-            max-height: 450px;
+            width: calc(80% - 20px);
+            min-height: 475px;
+            max-height: 475px;
             padding: 10px;
-            margin: auto;
             border: 1px solid black;
             background-color: rgba(0,0,0,0.5);
             overflow: auto;
             font-family: 'Texto','Times New Roman', Times, serif;
         }
-        .men_prin {
-            height: 71.5%; /* Specify a height */
-            width: 0; /* 0 width - change this with JavaScript */
-            position: absolute; /* Stay in place */
-            z-index: 1; /* Stay on top */
-            margin: auto;
-            top: 21;
-            left: 20;
-            background-color: rgba(5, 4, 4, 0.986); /* Black*/
-            overflow-x: hidden; /* Disable horizontal scroll */
-            padding-top: 0px; /* Place content 60px from the top */
-            transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+        .men_prin_m {
+            display: none;
         }
+        .openbtn {
+            display: none;
+        }
+        
     }
