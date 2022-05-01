@@ -391,6 +391,19 @@
             overflow: auto;
             font-family: 'Texto','Times New Roman', Times, serif;
         }
+        .men_prin {
+            height: 31.5%; /* Specify a height */
+            width: 0; /* 0 width - change this with JavaScript */
+            position: absolute; /* Stay in place */
+            z-index: 1; /* Stay on top */
+            margin: auto;
+            top: 21;
+            left: 20;
+            background-color: rgba(5, 4, 4, 0.986); /* Black*/
+            overflow-x: hidden; /* Disable horizontal scroll */
+            padding-top: 0px; /* Place content 60px from the top */
+            transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+        }
     }
 
     @media (min-width: 801px) and (max-width: 1200px) {
@@ -406,6 +419,19 @@
             overflow: auto;
             font-family: 'Texto','Times New Roman', Times, serif;
         }
+        .men_prin {
+            height: 50.5%; /* Specify a height */
+            width: 0; /* 0 width - change this with JavaScript */
+            position: absolute; /* Stay in place */
+            z-index: 1; /* Stay on top */
+            margin: auto;
+            top: 21;
+            left: 20;
+            background-color: rgba(5, 4, 4, 0.986); /* Black*/
+            overflow-x: hidden; /* Disable horizontal scroll */
+            padding-top: 0px; /* Place content 60px from the top */
+            transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+        }
     }
     
     @media (min-width: 1201px) {
@@ -419,5 +445,18 @@
             background-color: rgba(0,0,0,0.5);
             overflow: auto;
             font-family: 'Texto','Times New Roman', Times, serif;
+        }
+        .men_prin {
+            height: 71.5%; /* Specify a height */
+            width: 0; /* 0 width - change this with JavaScript */
+            position: absolute; /* Stay in place */
+            z-index: 1; /* Stay on top */
+            margin: auto;
+            top: 21;
+            left: 20;
+            background-color: rgba(5, 4, 4, 0.986); /* Black*/
+            overflow-x: hidden; /* Disable horizontal scroll */
+            padding-top: 0px; /* Place content 60px from the top */
+            transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
         }
     }
