@@ -13,297 +13,411 @@
 }
 /* Importar fuentes personalizas */
 
-
-*{
-    margin: 2px 2px 2px 2px;
-    padding: 2px;
-    color: rgb(208,228,242);
-}
-/* Setear unos ajustes predefinidos para toda la página */
-
-#contenido article h3 {
-    font-family: 'Subtitulo';
-    font-size: 20px;
-}
-/* Dar formati a los h3 */
-
-a:link {
-    color: #D0E4F2;
-    font-family: 'Subtitulo','Times New Roman', Times, serif;
-    font-size: x-large;
-    text-decoration: none;
-}
-a:visited {
-    color: #D0E4F2;
-    font-family: 'Subtitulo','Times New Roman', Times, serif;
-    font-size: x-large;
-    text-decoration: none;
-}
-a:hover {
-    color: rgb(208,228,242);
-    text-shadow: 2px 2px 2px rgb(48,185,219);
-    border-bottom: 1px solid;
-    font-family: 'Subtitulo','Times New Roman', Times, serif;
-    font-size: x-large;
-    text-decoration: none;
-}
-a:active {
-    color: #3E7BE6;
-    font-family: 'Subtitulo','Times New Roman', Times, serif;
-    font-size: x-large;
-    text-decoration: none;
-}
-/* Formato general a los links en sus 4 estados */
-
-body{
-    margin: 0px;
-    padding: 0%;
-    background: lightgray;
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url("../assets/Urithiru_LuisDavies.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    max-width: 1368px;
-    max-height: 720px;
-}
-
-/* Setear ajustes predefinidos para todo el cuerpo de la página */
-
-#contenedor{
-    width: 95%;
-    margin: 0px auto;
-    border: 1px solid black;
-    background-color: rgba(0,0,0,0.5);
-}
-/* Setear el formato del contenedor principal */
-
-header {
-    font-family: 'Titulo','Times New Roman', Times, serif;
-    font-size: 100%;
-    height: 100px;
-    width: calc(100% - 12px);
-    margin: 2px;
-    text-align: center;
-    line-height: 40px;
-    color: rgb(208,228,242);
-    text-shadow: 5px 5px 5px rgb(48,185,219);
-    border: 2px solid black;
-    background-color: rgba(0,0,0,0.5);
-    overflow: hidden;
-}
-/* Acá se establece el formato de la caja y letras del titulo y subitulos principales de la pagina */
-
-header #logo {
-    width: 70%;
-    margin: auto;
-}
-/* Acá se establece que el logo debe ocupar el 70% de una división del header */
-
-header h2 {
-    font-family: Subtitulo, Helvetica, sans-serif;
-}
-/* Acá se establece el formato del subitulo principal de la pagina */
-
-
-#men_prin {
-    width: calc(20% - 20px);
-    margin-top: 4px;
-    min-height: 475px;
-    border: 1px solid black;
-    padding-bottom: 18px;
-    background-color: rgba(0,0,0,0.5);
-    overflow: auto;
-}
-/* Se establece el formato del menu principal de toda la pagina */
-
-#men_prin ul li {
-    background: url('../assets/iconred.ico') no-repeat left center;
-    padding: 5px 10px 5px 25px;
-    list-style: none;
-    margin: 0;
-    vertical-align: middle;
-    height: 50px;
-    line-height: 50px;
-    border-bottom: 1px solid black;
-}
-
-/* Se le asigna un icono personalizado a la lista del menu ademas de mas opciones de formato */
-
-#men_prin ul #active {
-    background-color: rgba(0,0,0,0.5);
-}
-
-/* Se establece que cuando se está en una página estaba debe mostrarse mas opaca en el menú de opcines principal */
-
-#contenido {
-    float:right;
-    width: calc(80% - 20px);
-    min-height: 475px;
-    max-height: 475px;
-    padding: 10px;
-    border: 1px solid black;
-    background-color: rgba(0,0,0,0.5);
-    overflow: auto;
-    font-family: 'Texto','Times New Roman', Times, serif;
-}
-
-/* Se setea el estilo predefinido y el modelamiento de la caja de contenido */
-
-
-#contenido article a{
-    font-size: 16px;
-    font-family: 'Texto','Times New Roman', Times, serif;
-    margin: 0;
-    padding: 0;
-}
-
-#contenido article a:link {
-    color: rgb(31, 190, 253);
+    *{
+        margin: 2px 2px 2px 2px;
+        padding: 2px;
+        color: rgb(208,228,242);
+    }
+    /* Setear unos ajustes predefinidos para toda la página */
     
-}
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #292929;
+        border-radius: 10px;
+      }
+      
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: rgb(175, 175, 175);
+        border-radius: 10px;
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgb(175, 175, 175);
+        border-radius: 10px;
+      }
+    
+    #contenido article h3 {
+        font-family: 'Subtitulo';
+        font-size: 20px;
+    }
+    /* Dar formati a los h3 */
+    
+    a:link {
+        color: #D0E4F2;
+        font-family: 'Subtitulo','Times New Roman', Times, serif;
+        font-size: x-large;
+        text-decoration: none;
+    }
+    a:visited {
+        color: #D0E4F2;
+        font-family: 'Subtitulo','Times New Roman', Times, serif;
+        font-size: x-large;
+        text-decoration: none;
+    }
+    a:hover {
+        color: rgb(208,228,242);
+        text-shadow: 2px 2px 2px rgb(48,185,219);
+        border-bottom: 1px solid;
+        font-family: 'Subtitulo','Times New Roman', Times, serif;
+        font-size: x-large;
+        text-decoration: none;
+    }
+    a:active {
+        color: #3E7BE6;
+        font-family: 'Subtitulo','Times New Roman', Times, serif;
+        font-size: x-large;
+        text-decoration: none;
+    }
+    /* Formato general a los links en sus 4 estados */
+    
+    body{
+        /* overflow-y: hidden; */
+        margin: 0px;
+        padding: 0%;
+        background: lightgray;
+        font-family: Arial, Helvetica, sans-serif;
+        /* background-image: url("../assets/Urithiru_LuisDavies.jpg"); */
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: auto;
+    }
+    
+    /* Setear ajustes predefinidos para todo el cuerpo de la página */
+    
+    #contenedor{
+        margin: 0px auto;
+        border: 1px solid black;
+        background-color: rgba(0,0,0,0.5);
+    }
+    /* Setear el formato del contenedor principal */
+    
+    header {
+        font-family: 'Titulo','Times New Roman', Times, serif;
+        font-size: 100%;
+        height: 100px;
+        width: calc(100% - 12px);
+        margin: 2px;
+        text-align: center;
+        line-height: 40px;
+        color: rgb(208,228,242);
+        text-shadow: 5px 5px 5px rgb(48,185,219);
+        border: 2px solid black;
+        background-color: rgba(0,0,0,0.5);
+        overflow: hidden;
+    }
+    /* Acá se establece el formato de la caja y letras del titulo y subitulos principales de la pagina */
+    
+    header #logo {
+        width: 70%;
+        margin: auto;
+    }
+    /* Acá se establece que el logo debe ocupar el 70% de una división del header */
+    
+    header h2 {
+        font-family: Subtitulo, Helvetica, sans-serif;
+    }
+    /* Acá se establece el formato del subitulo principal de la pagina */
+    
+    
+    
+    
+    .men_prin ul li {
+        background: url('../assets/iconred.ico') no-repeat left center;
+        padding: 5px 10px 5px 25px;
+        list-style: none;
+        margin: 0;
+        vertical-align: middle;
+        height: 50px;
+        line-height: 50px;
+        border-bottom: 1px solid black;
+    }
+    
+    /* Se le asigna un icono personalizado a la lista del menu ademas de mas opciones de formato */
+    
+    .men_prin ul #active {
+        background-color: rgba(0,0,0,0.5);
+    }
+    
+    
+    
+    #contenido {
+        float:right;
+        max-height: 450px;
+        padding: 10px;
+        margin: auto;
+        border: 1px solid black;
+        background-color: rgba(0,0,0,0.5);
+        overflow: auto;
+        font-family: 'Texto','Times New Roman', Times, serif;
+    }
+    
+    /* Se setea el estilo predefinido y el modelamiento de la caja de contenido */
+    
+    
+    #contenido article a{
+        font-size: 16px;
+        font-family: 'Texto','Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #contenido article a:link {
+        color: rgb(31, 190, 253);
+        
+    }
+    
+    #contenido article a:visited {
+        color: rgb(31, 190, 253);
+    }
+    
+    #contenido article a:hover {
+        text-shadow: 2px 2px 2px rgb(51, 51, 97);
+        border-bottom: 0;
+        text-decoration: underline;
+    }
+    
+    /* Estableciendo estilos de los links en sus 3 princiaples estados dentrod e la caja de contenido */
+    
+    #contenido article .sup {
+        margin: 0;
+        padding: 0;
+        font-size: 13px;
+        vertical-align: super;
+    }
+    
+    /* Se crea la clase sup para superindices */
+    
+    .ref_menu article ul{
+    
+        list-style-type: decimal;
+        list-style-position: inside;
+        column-rule-style: double;
+        column-rule-color: rgb(123, 200, 255);
+        column-count: 2;
+    }
+    /* definiendo el estilo menu de referencias */
+    
+    .idc-box {
+        background: rgba(0,0,0,0.2) none repeat scroll 0 0;
+           border: 1px solid #6DF5DC;
+           border-radius: 5px;
+           display: table;
+           font-size: 80%;
+           margin-top: 1em;
+           margin-bottom: 1em;
+           padding-left: 20px;
+           padding-right: 20px;
+           padding-bottom: 20px;
+           padding-top: 5px;
+           width: auto;
+    } 
+    .idc-box .idc-titulo {
+        font-weight: 700;
+        text-align: center;
+        font-family: sans-serif;
+        font-style: normal;
+        padding-bottom: 7px;
+    
+    } 
+    .idc-box .idc-lista, .idc-box li, .idc-box ul, .idc-box ul li{
+        font-weight: 700;
+        padding: 0 5px;
+        list-style: outside none none !important;
+    }
+    
+    .idc-box a:link{
+        font-family: sans-serif;
+        font-size: small;
+    }
+    
+    /* Seteando todos los parametros de estilo de los indices de las páginas */
+    
+    footer {
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        text-align: center;
+        height: 30px;
+        line-height: 30px;
+        background-color: rgba(0,0,0,0.5);
+    }
+    
+    /* Aca se establece el estilo del pie de página */
+    
+    img {
+        margin: auto;
+        border-radius: 7px;
+    }
+    
+    .center {
+        text-align: center;
+      }
+    
+    /* se establece el formato de imagen y se crea la clase center pera centrar las mismas */
+    
+    .abrecomilla {
+        float: left;
+        width: 20px;
+        vertical-align: top;
+        border: none;
+        color: #20BD96;
+        font-size: 40px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        line-height: .6em;
+        text-align: left;
+        padding: 10px 10px;
+    }
+    
+    .cierracomilla {
+        vertical-align: bottom;
+        color: #20BD96;
+        font-size: 40px;
+        font-family:
+        'Times New Roman', Times, serif;
+        font-weight: bold;
+        line-height: .4em;
+        padding: 0;
+    }
+    
+    .cita {
+        background-color: rgba(11,66,53,0.3);
+        border-radius: 10px;
+        font-style: italic;
+        text-align: justify;
+    }
+    .refer {
+        background-color: rgba(11,66,53,0.3);
+        border-radius: 10px;
+        font-style: normal;
+    }
+    
+    /* Acá se logra definir el estilo de citas in-world para la página */
+    
+    .imagen {
+        background-color: rgba(255,107,103,0.3);
+        border-radius: 10px;
+        font-style: bold;
+    }
+    #creditos {
+        background-color: rgba(11,66,53,0.3);
+        border-radius: 10px;
+        text-align: justify;
+    }
+    
+    /* Acá se establece el estilo para citar a los autores de las ilustraciones */
+    
+    .limpiar {
+        clear: both;
+    }
+    
+    /* esta clase sirve limpiar un estilo predefinido, de esta manera se puede acomodar un caja con parametros nuevos y bien definidos */
+    
+    
+    /* RESPONSIVE WEB DESIGN */
+    
+    .openbtn {
+        font-size: 10px;
+        cursor: pointer;
+        background-color: rgba(0,0,0,0.5);
+        color: white;
+        padding: 10px 15px;
+        border-radius: 3px;
+        border: none;
+    }
+    
+    .openbtn:hover {
+        background-color: rgba(68, 68, 68, 0.253);
+    }
+    
+    .men_prin a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+    .men_prin a:hover {
+        text-decoration: none;
+        border-bottom: 0;
+    }
+    
+    .men_prin .closebtn {
+        position: relative;
+        top: 0;
+        font-size: 25px;
+        margin-left: 77.5%;
+    }
+    
+    .men_prin {
+        height: 71.5%; /* Specify a height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: absolute; /* Stay in place */
+        z-index: 1; /* Stay on top */
+        margin: auto;
+        top: 21;
+        left: 20;
+        background-color: rgba(5, 4, 4, 0.986); /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 0px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+    }
+    /* Se establece el formato del menu principal de toda la pagina */
 
-#contenido article a:visited {
-    color: rgb(31, 190, 253);
-}
+    @media (min-width: 480px) and (max-width: 800px) {
+        body {
+            background-color: lightblue;
+          }
 
-#contenido article a:hover {
-    text-shadow: 2px 2px 2px rgb(51, 51, 97);
-    border-bottom: 0;
-    text-decoration: underline;
-}
+        #contenido {
+            float:right;
+            max-width: 95%;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid black;
+            background-color: rgba(0,0,0,0.5);
+            overflow: auto;
+            font-family: 'Texto','Times New Roman', Times, serif;
+        }
+    }
 
-/* Estableciendo estilos de los links en sus 3 princiaples estados dentrod e la caja de contenido */
+    @media (min-width: 801px) and (max-width: 1200px) {
+        body {
+            background-color: red;
+          }
 
-#contenido article .sup {
-    margin: 0;
-    padding: 0;
-    font-size: 13px;
-    vertical-align: super;
-}
+        #contenido {
+            float:right;
+            max-width: 97%;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid black;
+            background-color: rgba(0,0,0,0.5);
+            overflow: auto;
+            font-family: 'Texto','Times New Roman', Times, serif;
+        }
+    }
+    
+    @media (min-width: 1201px) {
+        body {
+            background-color: green;
+          }
 
-/* Se crea la clase sup para superindices */
-
-.ref_menu article ul{
-
-    list-style-type: decimal;
-    list-style-position: inside;
-    column-rule-style: double;
-    column-rule-color: rgb(123, 200, 255);
-    column-count: 2;
-}
-/* definiendo el estilo menu de referencias */
-
-.idc-box {
-    background: rgba(0,0,0,0.2) none repeat scroll 0 0;
-       border: 1px solid #6DF5DC;
-       border-radius: 5px;
-       display: table;
-       font-size: 80%;
-       margin-top: 1em;
-       margin-bottom: 1em;
-       padding-left: 20px;
-       padding-right: 20px;
-       padding-bottom: 20px;
-       padding-top: 5px;
-       width: auto;
-} 
-.idc-box .idc-titulo {
-    font-weight: 700;
-    text-align: center;
-    font-family: sans-serif;
-    font-style: normal;
-    padding-bottom: 7px;
-
-} 
-.idc-box .idc-lista, .idc-box li, .idc-box ul, .idc-box ul li{
-    font-weight: 700;
-    padding: 0 5px;
-    list-style: outside none none !important;
-}
-
-.idc-box a:link{
-    font-family: sans-serif;
-    font-size: small;
-}
-
-/* Seteando todos los parametros de estilo de los indices de las páginas */
-
-footer {
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    text-align: center;
-    height: 30px;
-    line-height: 30px;
-    background-color: rgba(0,0,0,0.5);
-}
-
-/* Aca se establece el estilo del pie de página */
-
-img {
-    margin: auto;
-    border-radius: 7px;
-}
-
-.center {
-    text-align: center;
-  }
-
-/* se establece el formato de imagen y se crea la clase center pera centrar las mismas */
-
-.abrecomilla {
-    float: left;
-    width: 20px;
-    vertical-align: top;
-    border: none;
-    color: #20BD96;
-    font-size: 40px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    line-height: .6em;
-    text-align: left;
-    padding: 10px 10px;
-}
-
-.cierracomilla {
-    vertical-align: bottom;
-    color: #20BD96;
-    font-size: 40px;
-    font-family:
-    'Times New Roman', Times, serif;
-    font-weight: bold;
-    line-height: .4em;
-    padding: 0;
-}
-
-.cita {
-    background-color: rgba(11,66,53,0.3);
-    border-radius: 10px;
-    font-style: italic;
-    text-align: justify;
-}
-.refer {
-    background-color: rgba(11,66,53,0.3);
-    border-radius: 10px;
-    font-style: normal;
-}
-
-/* Acá se logra definir el estilo de citas in-world para la página */
-
-.imagen {
-    background-color: rgba(255,107,103,0.3);
-    border-radius: 10px;
-    font-style: bold;
-}
-#creditos {
-    background-color: rgba(11,66,53,0.3);
-    border-radius: 10px;
-    text-align: justify;
-}
-
-/* Acá se establece el estilo para citar a los autores de las ilustraciones */
-
-.limpiar {
-    clear: both;
-}
-
-/* esta clase sirve limpiar un estilo predefinido, de esta manera se puede acomodar un caja con parametros nuevos y bien definidos */
+        #contenido {
+            float:right;
+            max-width: 98%;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid black;
+            background-color: rgba(0,0,0,0.5);
+            overflow: auto;
+            font-family: 'Texto','Times New Roman', Times, serif;
+        }
+    }

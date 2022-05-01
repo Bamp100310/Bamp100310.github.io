@@ -28,8 +28,9 @@
             <div class="limpiar"></div>
             <!-- Se limpia el formato para acomodadr las cajas de menu princiapl y contenido -->
 
-            <section id="contenido">
+            <section id="contenido" id="main">
                 <!-- se crea la sección de contenido con diversos artículos -->
+                <article><button class="openbtn" onclick="openNav()">&#9776; Menú</button></article>
                 <article class="articulo">
                     <h3>¿Qué es Urihitu?</h3>                 
                 </article>
@@ -126,9 +127,9 @@
 
                 <article>
                 
-                    <p class="center"><img src="assets/Arquitectura.png" width="900px"><br><span class="imagen">Urithiru dibujado por Shallan Davar.<a href="referencias.html#hga_8b" class="sup" id="hga_8b">[8]</a></span></p>
+                    <p class="center"><img src="assets/Arquitectura.png" width="90%"><br><span class="imagen">Urithiru dibujado por Shallan Davar.<a href="referencias.html#hga_8b" class="sup" id="hga_8b">[8]</a></span></p>
                     <p>Urithiru es tan ancho como una ciudad y tan alto como una pequeña montaña.<a href="referencias.html#hga_20" class="sup" id="hga_20">[20]</a> Consta de 10 niveles semicirculares, con cada nivel de 18 pisos de altura, para un total de 180 pisos.<a href="referencias.html#hga_21" class="sup" id="hga_21">[21]</a> Con aproximadamente 4.5m por piso, la torre mide poco más de 800m de altura.<a href="referencias.html#hga_22" class="sup" id="hga_22">[22]</a> Al bajar, cada nivel es más ancho que el que está encima, y ​​los techos de los niveles más anchos tienen campos y jardines construidos sobre ellos. Hay numerosos balcones en los lados de la torre. El nivel inferior tiene amplias secciones que sobresalen en el perímetro, cada una del tamaño de una meseta.<a href="referencias.html#hga_23" class="sup" id="hga_23">[23]</a> Estas áreas tienen ranuras, que en el pasado eran surcos para cultivos, y jardineras alrededor de los bordes.<a href="referencias.html#hga_24" class="sup" id="hga_24">[24]</a> Enfrente de la torre hay una enorme plaza rodeada por las diez plataformas de la Puerta Jurada.<a href="referencias.html#hga_8c" class="sup" id="hga_8c">[8]</a></p>
-                    <p class="center"><img src="assets/escala.jpg" width="600px"><br><span class="imagen">Urithiru comparado con otras ciudades del mundo real.</span></p>
+                    <p class="center"><img src="assets/escala.jpg" width="60%"><br><span class="imagen">Urithiru comparado con otras ciudades del mundo real.</span></p>
                     <p>Los niveles inferiores "se fusionan" con las montañas a ambos lados, pero el centro y los niveles superiores tienen un lado plano en el lado de la tormenta. Las habitaciones de este lado plano tienen ventanas que dan al Este. Las ventanas de vidrio sobrevivieron milagrosamente a miles de años de abandono completamente intactas.</p>
                     <p>La columna central de Urithiru es una ventana sólida, también orientada hacia el Este. Esta columna tiene una huella del tamaño de un salón de baile y está llena de docenas de ascensores, que se parecen a los balcones exteriores y suben y bajan por canales verticales en las paredes utilizando Luz tormentosa. Las vigas grandes que sostienen la columna central parecen ser bastante prominentes y se usan como puntos de referencia al navegar por la torre. </p>
                     <p>Debido a que la torre es lo suficientemente alta como para estar por encima de la mayoría de las Altas Tormentas, existen largas cadenas con jaulas para bajar las piedras preciosas y renovar la luz tormentosa.</p>
@@ -150,8 +151,9 @@
 
             </section>
             <!-- en esta division esta hecho el menu principal, con sus hipervinculos funcionales -->
-            <div id="men_prin">
+            <div id="mySidebar" class="men_prin">
                 <ul>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <li id="active">
                         <a href="index.html">
                             INICIO
@@ -186,5 +188,16 @@
             </footer>
 
         </div>
+        <script>
+            /* Set the width of the sidebar to 250px (show it) */
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+            }
+
+            /* Set the width of the sidebar to 0 (hide it) */
+            function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+            }
+        </script>
     </body>
 </html>

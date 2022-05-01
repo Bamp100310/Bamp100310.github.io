@@ -25,6 +25,7 @@
 
             <section id="contenido">
 
+                <article><button class="openbtn" onclick="openNav()">&#9776; Menú</button></article>
 
                 <div class="idc-box">
                     <p class="idc-titulo">Contenido</p>
@@ -139,8 +140,9 @@
 
             </section>
 
-            <div id="men_prin">
+            <div id="mySidebar" class="men_prin">
                 <ul>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <li>
                         <a href="index.html">
                             INICIO
@@ -175,5 +177,16 @@
             </footer>
 
         </div>
+        <script>
+            /* Set the width of the sidebar to 250px (show it) */
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+            }
+
+            /* Set the width of the sidebar to 0 (hide it) */
+            function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+            }
+        </script>
     </body>
 </html>
