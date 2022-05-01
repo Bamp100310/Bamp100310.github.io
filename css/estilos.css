@@ -379,6 +379,7 @@
         #contenido {
             float:right;
             max-width: 95%;
+            max-height: 1000px;
             padding: 10px;
             margin: auto;
             border: 1px solid black;
@@ -396,6 +397,7 @@
         #contenido {
             float:right;
             max-width: 97%;
+            max-height: 600px;
             padding: 10px;
             margin: auto;
             border: 1px solid black;
@@ -413,6 +415,7 @@
         #contenido {
             float:right;
             max-width: 98%;
+            max-height: 450px;
             padding: 10px;
             margin: auto;
             border: 1px solid black;
